@@ -20,6 +20,7 @@ section{
     display: flex;
     height: 800px;
     background-color: #ddd;
+    justify-content: space-between;
 
 
 }
