@@ -1,0 +1,132 @@
+section{
+    padding: 100px 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.relative{
+    height: 800px;
+    border: 2px solid black;
+    position: relative;
+}
+
+
+.one,
+.two,
+.three,
+.four,
+.five{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.relative .top-left .one{
+    background-color: teal;
+
+    top: 0;
+    left: 0;
+}
+
+.relative .top-left .two{
+    background-color: crimson;
+    top: 20px;
+    left: 20px;
+
+}
+
+.relative .top-left .three{
+    background-color: cornflowerblue;
+    top: 50px;
+    left: 50px;
+}
+
+
+.relative .top-right .one{
+    background-color: teal;
+
+    top: 0;
+    right: 0;
+}
+
+.relative .top-right .two{
+    background-color: crimson;
+    top: 20px;
+    right: 20px;
+
+}
+
+.relative .top-right .three{
+    background-color: cornflowerblue;
+    top: 50px;
+    right: 50px;
+}
+
+
+.relative .bottom-right .one{
+    background-color: teal;
+
+    bottom: 0;
+    right: 0;
+}
+
+.relative .bottom-right .two{
+    background-color: crimson;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.relative .bottom-right .three{
+    background-color: cornflowerblue;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+
+
+.relative .bottom-left .one{
+    background-color: teal;
+
+    bottom: 0;
+    left: 0;
+}
+
+.relative .bottom-left .two{
+    background-color: crimson;
+    bottom: 20px;
+    left: 20px;
+
+}
+
+.relative .bottom-left .three{
+    background-color: cornflowerblue;
+    bottom: 50px;
+    left: 50px;
+}
+
+/* ------------------------------------- */
+
+.z-index .one{
+    background-color: teal;
+    top: 0;
+    left: 0;
+}
+
+.z-index .two{
+    background-color: crimson;
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+
+}
+
+.z-index .three{
+    background-color: cornflowerblue;
+    top: 50px;
+    left: 50px;
+}
