@@ -1,0 +1,66 @@
+section{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.yellow-title{
+    font-size: 40px;
+    color: yellowgreen;
+    margin: 0;
+}
+
+.btn{
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: teal;
+    transition: width 1s, height 1s, background-color 1s 1s;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.box:hover{
+    width: 800;
+    height: 600px;
+    background-color: coral;
+
+}
+
+.box h2{
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s 2s;
+}
+
+.box:hover h2{
+    opacity: 100%;
+}
+
+
+
+
+
+.none{
+    display: none; /* block or flex */
+}
+
+.hidden{
+    visibility: hidden; /* visible */
+}
+
+.opacity{
+    opacity: 0; /* 100% */
+}
