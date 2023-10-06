@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+
+}
+
+section{
+    padding: 50px 0;
+}
+
+.container{
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.space-between{
+    justify-content: space-between;
+}
+
+/* ------------------------------ */
+body{
+    height: 5000px;
+    padding-top: 70px;
+}
+
+
+nav{
+    background-color: red;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.parent{
+    height: 500px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    position: relative;
+
+    transition: transform 0.5s;
+
+    overflow: hidden; 
+}
+
+
+.parent:hover{
+    transform: scale(1.05);
+}
+
+.child{
+    width: 50px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: absolute;
+
+    top: 15px;
+    right: -70px;
+    transition: right 0.5s  0.5s;
+}
+
+.parent:hover .child{
+    right: 15px;
+}
+
+
+
+
+/* computer */
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 70%;
+    }
+
+    .parent{
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        width: 80%;
+    }
+
+    .row, .d-flex{
+        flex-direction: column;
+        gap: 20px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        width: 90%;
+    }
+
+    .row, .d-flex{
+        flex-direction: column;
+        gap: 20px 0;
+    }
+    
+}
