@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    margin: auto;
+}
+
+section{
+    padding: 50px 0;
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.space-between{
+    justify-content: space-between;
+}
+
+.view_1 .card{
+    width: 24%;
+    height: 450px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.view_1 .card .icons{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    width: fit-content;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    right: -70px;
+    transition: right 0.5s;
+}
+
+.view_1 .card .icons i{
+    font-size: 20px;
+    color: yellowgreen;
+}
+
+.view_1 .card:hover .icons{
+    right: 15px;
+}
+
+
+
+
+.view_2 .card{
+    width: 24%;
+    height: 350px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.view_2 .card .info{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    top: 100%;
+    transition: top 0.5s;
+}
+
+.view_2 .card:hover .info{
+    top: 0;
+}
+
+
+.view_3 .card{
+    width: 24%;
+    height: 350px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.view_3 .card .info{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 100%;
+    transition: bottom 0.5s;
+}
+
+.view_3 .card:hover .info{
+    bottom: 0;
+}
+
+
+.view_4 .card{
+    width: 24%;
+    height: 350px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.view_4 .card .info{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    left: 100%;
+    transition: left 0.5s;
+}
+
+.view_4 .card:hover .info{
+    left: 0;
+}
+
+
+.view_5 .card{
+    width: 24%;
+    height: 350px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.view_5 .card .info{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    right: 100%;
+    transition: right 0.5s;
+}
+
+.view_5 .card:hover .info{
+    right: 0;
+}
+
+/* computer */
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 70%;
+    }
+
+    .parent{
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        width: 80%;
+    }
+
+    .row, .d-flex{
+        flex-direction: column;
+        gap: 20px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        width: 90%;
+    }
+
+    .row, .d-flex{
+        flex-direction: column;
+        gap: 20px 0;
+    }
+    
+}
