@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    box-sizing: border-box; /* solve problem of padding and border */
+}
+
+.container
+{
+    width: 70%;
+    margin: auto;
+}
+
+
+section{
+    padding: 50px 0;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap; /*   */
+}
+
+
+.align-center{
+    align-items: center; /* center (top, bottom) */
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+a{
+    text-decoration: none;
+    color: grey;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+a:hover,
+.active{
+    color: #ff7a57;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+
+.btn-primary{
+    background-color: #ff7a57;
+    border: 1px solid #ff7a57;
+    color: white;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    border: 1px solid #ff7a57;
+    color: #ff7a57;
+}
+
+
+/* -------------------------------------------------- */
+
+nav{
+    box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.3);
+    padding: 5px 0;
+}
+
+
+nav img{
+    width: 75px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 0 10px;
+    margin-right: 10px;
+}
