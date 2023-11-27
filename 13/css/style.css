@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: sans-serif;
     box-sizing: border-box; /* solve problem of padding and border */
 }
 
@@ -65,12 +66,56 @@ a:hover,
     color: #ff7a57;
 }
 
+.btn-dark{
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    color: white;
+}
+
+.btn-dark:hover{
+    background-color: white;
+    border: 1px solid #343a40;
+    color: #343a40;
+}
+
+.my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff7a57;
+    color: #ff7a57;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.icons i:hover{
+    color: white;
+    background-color: #ff7a57; 
+}
 
 /* -------------------------------------------------- */
 
 nav{
     box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.3);
     padding: 5px 0;
+
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: white;
 }
 
 
@@ -94,6 +139,35 @@ nav i {
 }
 
 
+body{
+    height: 450000px;
+}
+
+/* -------------------- */
+main{
+    padding-top: 65px;
+    border-bottom: 1px solid #ddd;
+}
+
+main .d-flex{
+    height: 80vh;
+}
+
+main .text p{
+    font-size: 30px;
+    opacity: 65%;
+}
+
+main .text h2{
+    font-size: 50px;
+    opacity: 75%;
+}
+
+main img{
+    width: 620px;
+    align-self: flex-end;
+}
+
 
 @media screen and (min-width: 1024px) {
     .container
@@ -110,6 +184,10 @@ nav i {
         gap: 0 10px;
         margin-right: 10px;
     }
+
+    .w-50{
+        width: 49%;   
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -120,6 +198,8 @@ nav i {
 
     nav .menu-div{
         width: 100%;
+        display:none;
+
     }
 
     nav ul{
@@ -127,6 +207,10 @@ nav i {
         flex-direction: column;
         gap: 5px 0;
         margin-bottom: 5px;
+    }
+
+    main img{
+        display: none;
     }
 }
 
@@ -138,6 +222,7 @@ nav i {
 
     nav .menu-div{
         width: 100%;
+        display:none;
     }
 
 
@@ -146,5 +231,9 @@ nav i {
         flex-direction: column;
         gap: 5px 0;
         margin-bottom: 5px;
+    }
+
+    main img{
+        display: none;
     }
 }
