@@ -106,6 +106,10 @@ a:hover,
     background-color: #ff7a57; 
 }
 
+.img-div img{
+    width: 100%;
+}
+
 /* -------------------------------------------------- */
 
 nav{
@@ -116,6 +120,7 @@ nav{
     top: 0; 
     width: 100%;
     background-color: white;
+    z-index: 1000;
 }
 
 
@@ -167,7 +172,47 @@ main img{
     width: 620px;
     align-self: flex-end;
 }
+/* -------------------------------------------- */
 
+.widget{
+    margin: auto;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: 1px solid #ddd;
+    box-shadow:  0 0 40px 20px rgba(128, 128, 128, 0.3);
+    background-color: white;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.widget p{
+    opacity: 50%;
+}
+
+.widget .number{
+    opacity: 80%;
+    font-size: 20px;
+}
+/* ------------------------------------------------- */
+
+
+
+.cv img{
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cv .name{
+    font-size: 25px;
+}
+
+.cv .job{
+    opacity: 50%;
+}
 
 @media screen and (min-width: 1024px) {
     .container
@@ -187,6 +232,20 @@ main img{
 
     .w-50{
         width: 49%;   
+    }
+
+
+    .widget{
+
+        width: 40%;
+    }
+
+    .cv .img-div{
+        width: 28%;
+    }
+    
+    .cv .text{
+        width: 68%;
     }
 }
 
@@ -212,6 +271,17 @@ main img{
     main img{
         display: none;
     }
+
+    .widget{
+
+        width: 70%;
+    }
+
+
+    .d-flex:not(main .d-flex ), .row:not(nav .row) {
+        flex-direction: column;
+        gap: 10px 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -235,5 +305,15 @@ main img{
 
     main img{
         display: none;
+    }
+
+    .widget{
+
+        width: 90%;
+    }
+
+    .d-flex:not(main .d-flex ), .row:not(nav .row) {
+        flex-direction: column;
+        gap: 10px 0;
     }
 }
